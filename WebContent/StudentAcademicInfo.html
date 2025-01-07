@@ -1,0 +1,497 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Golden Star News - Free CSS Template</title>
+<meta name="keywords" content="free css template, latest news, golden star, CSS, HTML" />
+<meta name="description" content="Golden Star News - Free CSS Template provided by templatemo.com" />
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript">
+function clearText(field)
+{
+    if (field.defaultValue == field.value) field.value = '';
+    else if (field.value == '') field.value = field.defaultValue;
+}
+</script>
+
+<style type="text/css">
+<!--
+.style1 {color: #FFFFFF}
+-->
+
+<script language="javascript">
+function faggregate()
+{
+var first,sec,res;
+type=document.forms[0].studtype.value;
+f1=parseFloat(document.forms[0].fe1.value);
+f2=parseFloat(document.forms[0].fe2.value);
+s1=parseFloat(document.forms[0].se1.value);
+s2=parseFloat(document.forms[0].se2.value);
+t1=parseFloat(document.forms[0].te1.value);
+t2=parseFloat(document.forms[0].te2.value);
+b1=parseFloat(document.forms[0].be1.value);
+b2=parseFloat(document.forms[0].be2.value);
+if(f1)
+{
+res=(f1+f2+s1+s2+t1+t2+b1+b2)/8;
+
+}
+else
+{
+res=(s1+s2+t1+t2+b1+b2)/6;
+}
+document.forms[0].txtresult.value=res;
+}
+function displayResult(studtype)
+{
+document.getElementById("result").value=studtype;
+document.getElementById("result1").value=studtype;
+document.getElementById("dip").value="";
+document.forms[0].fe1.disabled=true;
+document.forms[0].fe2.disabled=true;
+document.forms[0].dip.disabled=false;
+}
+function displayResult2(studtype)
+{
+document.getElementById("dip").value=studtype;
+document.getElementById("result").value="";
+document.getElementById("result1").value="";
+document.forms[0].dip.disabled=true;
+document.forms[0].fe1.disabled=false;
+document.forms[0].fe2.disabled=false;
+}
+
+</script>
+
+<script language="JavaScript">
+
+function cname()
+{
+var len,i,ch;
+len=cal.college.value.length;
+for(i=0;i<len;i++)
+{
+	ch=cal.college.value.charAt(i);
+	if(ch==''||ch=='#'||ch=='*'||ch=='@'||ch=='$'||ch=='%'||ch=='1'||ch=='2'||ch=='3'||ch=='4'||ch=='5'||ch=='6'||ch=='7'||ch=='8'||ch=='9'||ch=='0')
+	{
+	alert('Name cannot contain @,#,$,%,&,*,0,1,2,3,4,5,6,7,8,9');
+		document.getElementById("college").value="";
+	return false;
+	}
+	
+}
+return true;
+}
+</script>
+<script language="JavaScript">
+function hsc1()
+{
+var len,i,ch;
+len=cal.hsc.value.length;
+if(isNaN(cal.hsc.value))
+{
+	alert('Marks should be Numeric');
+	document.getElementById("hsc").value="";
+	return false;
+}
+return true;
+
+}
+</script>
+<script language="JavaScript">
+function ssc1()
+{
+var len,i,ch;
+len=cal.ssc.value.length;
+if(isNaN(cal.ssc.value))
+{
+	alert('Marks should be Numeric');
+	document.getElementById("ssc").value="";
+	return false;
+}
+return true;
+
+}
+</script>
+
+<script language="JavaScript">
+function diploma1()
+{
+var len,i,ch;
+len=cal.diploma.value.length;
+if(isNaN(cal.diploma.value))
+{
+	alert('Marks should be Numeric');
+	document.getElementById("diploma").value="";
+	return false;
+}
+return true;
+
+}
+</script>
+
+<script language="JavaScript">
+function fejs1()
+{
+var len,i,ch;
+len=cal.fe1.value.length;
+if(isNaN(cal.fe1.value))
+{
+	alert('Marks should be Numeric');
+	document.getElementById("fe1").value="";
+	return false;
+}
+return true;
+
+}
+</script>
+<script language="JavaScript">
+function fejs2()
+{
+var len,i,ch;
+len=cal.result1.value.length;
+if(isNaN(cal.result1.value))
+{
+	alert('Marks should be Numeric');
+	document.getElementById("result1").value="";
+	return false;
+}
+return true;
+
+}
+</script>
+<script language="JavaScript">
+function sejs1()
+{
+var len,i,ch;
+len=cal.se1.value.length;
+if(isNaN(cal.se1.value))
+{
+	alert('Marks should be Numeric');
+	document.getElementById("se1").value="";
+	return false;
+}
+return true;
+
+}
+</script>
+<script language="JavaScript">
+function sejs2()
+{
+var len,i,ch;
+len=cal.se2.value.length;
+if(isNaN(cal.se2.value))
+{
+	alert('Marks should be Numeric');
+	document.getElementById("se2").value="";
+	return false;
+}
+return true;
+
+}
+</script>
+<script language="JavaScript">
+function tejs1()
+{
+var len,i,ch;
+len=cal.te1.value.length;
+if(isNaN(cal.te1.value))
+{
+	alert('Marks should be Numeric');
+	document.getElementById("te1").value="";
+	return false;
+}
+return true;
+
+}
+</script>
+<script language="JavaScript">
+function tejs2()
+{
+var len,i,ch;
+len=cal.te2.value.length;
+if(isNaN(cal.te2.value))
+{
+	alert('Marks should be Numeric');
+	document.getElementById("te2").value="";
+	return false;
+}
+return true;
+
+}
+</script>
+
+<script language="JavaScript">
+function bejs1()
+{
+var len,i,ch;
+len=cal.be1.value.length;
+if(isNaN(cal.be1.value))
+{
+	alert('Marks should be Numeric');
+	document.getElementById("be1").value="";
+	return false;
+}
+return true;
+
+}
+</script>
+<script language="JavaScript">
+function bejs2()
+{
+var len,i,ch;
+len=cal.be2.value.length;
+if(isNaN(cal.be2.value))
+{
+	alert('Marks should be Numeric');
+	document.getElementById("be2").value="";
+	return false;
+}
+return true;
+
+}
+</script>
+<script language="JavaScript">
+function ayear()
+{
+var len,i,ch;
+len=cal.admission_year.value.length;
+if(isNaN(cal.admission_year.value))
+{
+	alert('Year should be Numeric');
+	document.getElementById("admission_year").value="";
+	return false;
+}
+return true;
+
+}
+</script>
+
+<script language="JavaScript">
+function cyear()
+{
+var len,i,ch;
+len=cal.current_year.value.length;
+if(isNaN(cal.current_year.value))
+{
+	alert('Year should be Numeric');
+	document.getElementById("current_year").value="";
+	return false;
+}
+return true;
+
+}
+</script>
+<script language="JavaScript">
+function lb()
+{
+var len,i,ch;
+len=cal.lback.value.length;
+if(isNaN(cal.lback.value))
+{
+	alert('Year should be Numeric');
+	document.getElementById("lback").value="";
+	return false;
+}
+return true;
+
+}
+</script>
+<script language="JavaScript">
+function db()
+{
+var len,i,ch;
+len=cal.dback.length;
+if(isNaN(cal.dback.value))
+{
+	alert('Year should be Numeric');
+	document.getElementById("dback").value="";
+	return false;
+}
+return true;
+
+}
+</script>
+
+</style>
+</head>
+<body>
+
+<div id="templatemo_wrapper">
+	
+    <div id="templatemo_header">
+    
+   	  	<div id="site_title"><h1><a href="http://www.templatemo.com/page/1">Free CSS Templates</a></h1></div>
+  
+		
+        <div id="twitter"><a href="http://www.facebook.com/templatemo">Follow Us</a></div>
+        
+    </div> <!-- end of header -->
+    
+     <div id="templatemo_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="news.html" class="current">News</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>    	
+        <div id="search_box">
+            <form action="#" method="post">
+              <input name="q" type="text" id="searchfield" title="searchfield" onfocus="clearText(this)" onblur="clearText(this)" value="Search" size="10" maxlength="60" />
+            </form>
+        </div>
+        <div class="cleaner"></div>
+    </div> <!-- end of templatemo_menu -->
+    
+    <div id="slider_wrapper_n">
+    	<h2><a href="#">Fill </a><a href="#" class="style1">View</a> <a href="#">Update</a> </h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris iaculis nulla vitae ante congue iaculis. Nunc vitae sapien sed neque porttitor egestas sit amet ut ligula. Praesent placerat dui ut nibh eleifend lobortis. Vestibulum dictum tincidunt posuere. Vestibulum ut justo in ligula vulputate interdum. Mauris porttitor vulputate molestie. </p>
+  </div>
+        
+  <div id="templatemo_main">
+   <form name="cal" action="academicInfoAction1.jsp"method="get">
+<fieldset>
+<legend>Academic Details</legend>
+<fieldset>
+<table width="584" border="0" align="center" >
+  <tr>
+    <td width="130" height="38"><div align="center">Admission Year </div></td>
+    <td width="153"><input name="admission_year" type="text" id="admission_year" onkeypress="return ayear()"></td>
+    <td width="104"><div align="center">Current year </div></td>
+    <td width="179"><input name="current_year" type="text" id="current_year" onkeypress="return cyear()"></td>
+  </tr>
+  <tr>
+    <td height="36"><div align="center">User ID </div></td>
+    <td><input  type="text" name="user_id" id="user_id"></td>
+    <td><div align="center">Branch</div></td>
+    <td width="179"><select name="branch" id="branch" >
+      <option>Computer</option>
+      <option>Mechanical</option>
+      <option>Information Tech.</option>
+      <option>E &amp;TC</option>
+      <option>Chemical</option>
+      <option>MBA</option>
+      <option>Civil</option>
+      <option>Electrical</option>
+      <option>Biotechnology</option>
+    </select></td>
+
+  </tr>
+<tr>
+	<td><div align="center">College</div></td>
+	<td><input type="text" name="college" onkeypress="return cname()"></td>
+</tr>
+</table>
+</fieldset>
+&nbsp;
+&nbsp;
+
+<fieldset><table width="584" border="0" align="center" cellpadding="1">
+  <tr>
+    <td width="286" height="30"><div align="right">Select Diploma or Regular : </div></td>
+    <td width="288"><div align="left">
+          <input name="studtype" type="radio" onclick="displayResult2(this.value)"  value="0.0">
+      Regular
+      <input name="studtype" type="radio"  onclick="displayResult(this.value)" value="0.0" >
+      Diploma</div></td>
+  </tr>
+</table>
+
+<fieldset>
+<div align="center">Applied for HSC or not?</div>
+<div align="center">
+    <input name="yesno" type="radio" value="hscyes">
+    YES
+    <input name="yesno" type="radio" value="hscno">
+    NO
+</div>
+</fieldset>
+</fieldset>
+&nbsp;
+&nbsp;
+&nbsp;
+
+&nbsp;
+&nbsp;
+<fieldset>
+<table width="584" border=0" align="center">
+  <tr>
+    <td width="130"><div align="center">SSC</div></td>
+    <td width="145"><input name="ssc" type="text" id="ssc" onkeypress="return ssc1()"></td>
+    <td width="109"><div align="center">HSC</div></td>
+    <td width="182"><input name="hsc" type="text" id="hsc" onkeypress="return hsc1()"></td>
+    </tr>
+  <tr>
+   
+  
+    </tr>
+  <tr>
+    <td height="39"><div align="center">Diploma</div></td>
+    <td><input name="diploma" type="text" id="dip" onkeypress="return diploma1()"></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="48"><div align="center">FEI</div></td>
+    <td><input name="fe1" type="text" id="result" onkeypress="return fejs1()"></td>
+    <td><div align="center">FEII</div></td>
+    <td><input name="fe2" type="text" id="result1" onkeypress="return fejs2()"></td>
+    </tr>
+  <tr>
+    <td height="43"><div align="center">SEI</div></td>
+    <td><input name="se1" type="text" id="se1" onkeypress="return sejs1()"></td>
+    <td><div align="center">SEII</div></td>
+    <td><input name="se2" type="text" id="se2" onkeypress="return sejs2()"></td>
+  </tr>
+  <tr>
+    <td height="47"><div align="center">TEI</div></td>
+    <td><input name="te1" type="text" id="te1" onkeypress="return tejs1()"></td>
+    <td><div align="center">TEII</div></td>
+    <td><input name="te2" type="text" id="te2" onkeypress="return tejs2()"></td>
+  </tr>
+  <tr>
+    <td height="40"><div align="center">BEI</div></td>
+    <td><input name="be1" type="text" id="be1" onkeypress="return bejs1()"></td>
+    <td><div align="center">BEII</div></td>
+    <td><input name="be2" type="text" id="be2" onkeypress="return bejs2()"></td>
+  </tr>
+  <tr>
+    
+    <td height="39"><div align="center">Aggregate</div></td>
+    <td><input name="aggregate" type="text" id="txtresult" onkeypress="return faggregate()"></td>
+	
+    <td height="39">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+   <tr>
+    <td height="37"><div align="center">Live Backlogs</div></td>
+    <td><input name="lback" type="text" id="lback" onkeypress="return lb()"></td>
+    <td><div align="center">Dead Backlogs </div></td>
+    <td><input name="dback" type="text" id="dback" onkeypress="return db()"></td>
+  </tr>
+</table>
+</fieldset>
+<div align="center"><input name="Submit" type="submit" value="Submit" >
+  <input name="Submit" type="reset" value="Reset" >
+  <input name="Submit" type="submit" value="Cancel" >
+</div>
+</fieldset>
+
+</form>
+    <span class="bottom"></span></div>
+	
+  <!-- end of main -->
+
+</div> <!-- end of templatemo_wrapper -->
+
+<div id="templatemo_footer">
+    
+    	Copyright © 2022 <a href="#">Arati|Khushbu|Yogesh|Pratik</a> - 
+        Designed by <a href="http://sgdcoe_comp_te_22.com" target="_parent">Arati|Khushbu|Yogesh|Pratik</a>
+
+</div> <!-- end of templatemo_footer -->
+
+</body>
+</html>

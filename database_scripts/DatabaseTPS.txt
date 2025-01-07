@@ -1,0 +1,100 @@
+create user tps identified by tps;
+grant connect,resource to tps;
+create table  LoginTable1 (uname varchar2(30) primary key, pass varchar2(30), type varchar2(20));
+
+create table StudentBasicInfo 
+   (	uname varchar2(30) references  LoginTable1, surname varchar2(20), first_name varchar2(20), fathername varchar2(20), 
+	mothername varchar2(20), 
+	photo_path varchar2(40) not null enable, 
+	signature_path varchar2(40) not null enable, 
+	day varchar2(20),
+	month varchar2(20),
+	year varchar2(20),
+	gender varchar2(7), 
+	permant_address varchar2(150), 
+	local_address varchar2(150), 
+	city varchar2(20), 
+	pin number, 
+	state varchar2(20), 
+	stud_contact number(10,0), 
+	parent_contact number(10,0), 
+	landline number(10,0), 
+	email varchar2(20), 
+	 resume varchar2(70));
+
+create table  StudentAcademicInfo1 
+   (	uname varchar2(30)  references  LoginTable1, 
+	admission_year number, 
+	college varchar2(100), 
+	branch varchar2(20), 
+	hsc float, 
+	ssc float, 
+	diploma float, 
+	fe1 float, 
+	fe2 float, 
+	se1 float, 
+	se2 float, 
+	te1 float, 
+	te2 float, 
+	aggregate float, 
+	lback number, 
+	dback number, 
+	current_year number, 
+	be1 float, 
+	be2 float, 
+	academicyear varchar2(20) );
+
+create table  AdditionalAcademicInfo
+   (	uname varchar2(20)  references  LoginTable1, 
+	cliteracy varchar2(20), 
+	courses varchar2(20), 
+	sppt varchar2(20), 
+	project varchar2(20), 
+	others varchar2(20));
+
+create table  Recruiter 
+   (	companyname varchar2(50), 
+	job_specification varchar2(50), 
+	branch varchar2(50), 
+	platform varchar2(50), 
+	required_course varchar2(600), 
+	criteria varchar2(70), 
+	other_notification varchar2(700), 
+	annual_package float(126), 
+	website varchar2(50), 
+	required_candidates number,
+	job_id number primary key,
+	uname varchar2(40) );
+
+
+create table  Company_Info 
+   (	company_id number primary key, 
+	company_name varchar2(100), 
+	contact_person varchar2(50), 
+	address varchar2(40), 
+	city varchar2(40), 
+	zipcode number, 
+	mobileno long, 
+	email varchar2(50), 
+	website varchar2(50));
+
+create table  NotificationAbtCompany
+   (	job_id number references Recruiter, 
+	uname varchar2(30), 
+	companyname varchar2(100), 
+	ndate varchar2(30));
+
+create table  Placement 
+   (	day number, 
+	month varchar2(20), 
+	year number(4,0), 
+	academicyear varchar2(20), 
+	branch varchar2(40), 
+	studentname varchar2(80), 
+	company_name varchar2(90));
+
+create table  ApplyForJob 
+   (	uname varchar2(30), 
+	companyname varchar2(60), 
+	job_id number references Recruiter);
+
